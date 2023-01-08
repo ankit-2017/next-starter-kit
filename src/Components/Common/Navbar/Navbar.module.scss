@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  background-color: #d7d5f0;
+  padding: 20px 0;
+  display: flex;
+}
+
+.brandName {
+  text-decoration: none;
+  margin-left: 1rem;
+  padding: 0 20px;
+  align-items: center;
+  color: black;
+}
+
+.NavMenu {
+  margin-left: auto;
+  // text-align: center;
+
+  ul {
+    display: flex;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+}

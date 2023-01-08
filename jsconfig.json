@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+      "baseUrl": "src"
+    },
+    "include": ["src", "pages"],
+    "exclude": ["node_modules", "**/node_modules", "dist", ".next", "yarn-error.log", "yarn.lock"]
+}

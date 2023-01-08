@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home/> Should render home component 1`] = `
+<DocumentFragment>
+  <div
+    class="homeContainer"
+  >
+    <h1>
+      Your Public Ip: test IP
+    </h1>
+  </div>
+</DocumentFragment>
+`;

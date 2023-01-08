@@ -1,3 +1,49 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "root": true,
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+    ],
+  "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "requireConfigFile": false,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": true,
+        "experimentalObjectRestSpread": true
+    }
+  },
+  "plugins": ["react"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+  // "overrides": [
+  //   // Only uses Testing Library lint rules in test files
+  //   {
+  //     "files": [
+  //       "**/__tests__/**/*.[jt]s?(x)",
+  //       "**/?(*.)+(spec|test).[jt]s?(x)"
+  //     ],
+  //     "extends": ["plugin:@testing-library/react"]
+  //   }
+  // ]
 }
